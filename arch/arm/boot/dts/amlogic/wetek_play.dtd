@@ -1412,15 +1412,15 @@ void root_func(){
 leds{
   compatible = "amlogic,wetekplay-led";
   powerled{
-    label = "wetek:blue:powerled";
+    label = "power";
   };
 
   wifiled{
-    label = "wetek:blue:wifiled";
+    label = "network";
   };
 
   ethled{
-    label = "wetek:blue:ethled";
+    label = "status";
   };
 };
 

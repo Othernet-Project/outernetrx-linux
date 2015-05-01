@@ -88,24 +88,22 @@ static enum led_brightness wetekplay_ethled_get(struct led_classdev *cdev)
 
 
 static struct led_classdev wetekplay_powerled = {
-	.name = "wetek:blue:powerled",
+	.name = "power",
 	.brightness_set = wetekplay_powerled_set,
 	.brightness_get = wetekplay_powerled_get,
 	.default_trigger = "default-on",
 };
 
 static struct led_classdev wetekplay_wifiled = {
-	.name = "wetek:blue:wifiled",
+	.name = "network",
 	.brightness_set = wetekplay_wifiled_set,
 	.brightness_get = wetekplay_wifiled_get,
-	.default_trigger = "wifilink",
 };
 
 static struct led_classdev wetekplay_ethled = {
-	.name = "wetek:blue:ethled",
+	.name = "status",
 	.brightness_set = wetekplay_ethled_set,
 	.brightness_get = wetekplay_ethled_get,
-	.default_trigger = "ethlink",
 };
 
 static int wetekplay_led_probe(struct platform_device *pdev)
